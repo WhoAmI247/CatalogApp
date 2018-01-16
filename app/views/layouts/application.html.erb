@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CatalogApp</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+      <header class="header clearfix">
+        <div class="container">
+          <nav>
+            <ul class="nav nav-pills float-right">
+              <li class="nav-item btn-color">
+                <%= link_to 'Login', :class=> 'nav-link btn btn-login'%>
+              </li>
+            </ul>
+          </nav>
+        <h3 class="text-white">Catalog App</h3>
+        </div>
+      </header>
+
+      <div class="container">
+      <%= yield %>
+      
+    </div>  
+  </body>
+</html>
