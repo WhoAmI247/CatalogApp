@@ -1,15 +1,18 @@
 <main role="main">
   <div class="jumbotron">
     <div class=row>
-      <div class="col-4">
+      <div class="col-4 link-custom">
       <% @categories.each do |category| %>
-        <%= link_to category.name %>
+        <%= link_to category.name%>
         <br>
       <% end %> 
     </div>
     
-    <div class="col-8">
-      
+    <div class="col-8 vertical-line">
+      <% @items.each do |item| %>
+        <%= link_to item.name%>
+        <br>
+      <% end %> 
     </div>
     </div>
     

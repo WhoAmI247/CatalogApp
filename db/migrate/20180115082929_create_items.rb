@@ -3,7 +3,7 @@ class CreateItems < ActiveRecord::Migration[5.1]
     create_table :items do |t|
       t.string :name
       t.text :description
-      t.references :category, foreign_key: true
+      t.references :category
 
       t.timestamps
     end

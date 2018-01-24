@@ -17,3 +17,15 @@
     {name:'Skating'},
     {name:'Hockey '}
   ]) 
+  
+  Item.create!([
+    {name: 'Stick', description: '', category: 9},
+    {name: 'Goggles', description: '', category: 5},
+    {name: 'Snowboard', description: '', category: 5},
+    {name: 'Two shinguards', description: '', category: 1},
+    {name: 'Shinguards', description: '', category: 1},
+    {name: 'Frisbee', description: '', category: 4},
+    {name: 'Bat', description: '', category: 3},
+    {name: 'Jersey', description: '', category: 1},
+    {name: 'Soccer Cleats', description: '', category: 1}
+    ])

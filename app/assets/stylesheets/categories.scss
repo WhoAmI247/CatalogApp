@@ -1,6 +1,17 @@
 // Place all the styles related to the Categories controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.verticalLine {
-  border-left: thick solid #e6e6e6;
+.vertical-line {
+  border-left: 2px solid #e4dddd;
+}
+
+.link-custom > a{
+  text-decoration: none;
+  color: #e34d07;
+}
+
+.link-custom > a:hover{
+  text-decoration: none;
+  background-color: #eee;
+  color: #ad3b05;
 }
