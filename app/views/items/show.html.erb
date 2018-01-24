@@ -1,19 +1,11 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Item:</strong>
-  <%= @item.item_id %>
-</p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @item.name %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @item.description %>
-</p>
-
-<%= link_to 'Edit', edit_item_path(@item) %> |
-<%= link_to 'Back', items_path %>
+<div class="jumbotron tag-format">
+  <div class=row>
+    <h2><%= @item.name %></h2>
+    <div><%= @item.description %></div>
+      <%= link_to 'Edit', edit_item_path(@item),:class=> 'btn btn-primary'%>
+      <%= link_to 'Delete', item_path(@item), 
+      method: :delete, 
+      data: {confirm: "Are you sure ?"},
+      :class=> 'btn btn-danger' %>
+  </div>
+</div>

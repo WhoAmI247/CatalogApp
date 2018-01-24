@@ -1,9 +1,22 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @category.name %>
-</p>
-
-<%= link_to 'Edit', edit_category_path(@category) %> |
-<%= link_to 'Back', categories_path %>
+<div class="jumbotron tag-format">
+    <div class=row>
+      <div class="col-4 link-custom">
+      <h2>Categories</h2>
+      <% @categories.each do |category| %>
+        <%= link_to category.name, category_path(category)%>
+        
+        <br>
+      <% end %> 
+    </div>
+    
+    <div class="col-8 vertical-line">
+      <%= link_to 'Add Item' %>
+      <h2><%= @category.name %> Items (<%= @items.length%> items)</h2>
+      <% @items.each do |item| %>
+        <%= link_to item.name, item_path(item)%> (<%= item.category.name %>)
+        <br>
+      <% end %> 
+    </div>
+    </div>
+    
+  </div>
