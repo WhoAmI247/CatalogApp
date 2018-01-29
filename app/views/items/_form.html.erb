@@ -28,7 +28,7 @@
   
   <div class="field">
     <%= form.label :category_id %>
-    <%= select("post", "category_id", Category.all.collect {|p| [ p.name, p.id ] }, {prompt: 'Select Category'}) %>
+    <%= select("item", "category_id", Category.all.collect {|p| [ p.name, p.id ] }, {prompt: 'Select Category'}) %>
   </div>
 
   <div class="actions">

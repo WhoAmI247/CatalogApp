@@ -19,6 +19,16 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  
+ 
+.custom-link > a{
+  text-decoration: none;
+  color: white;   
+}
+
+.custom-link > a:hover{
+  background-color: #021f40 !important;
+}
+ 
 .header{
     background-color: #021f40
 }
