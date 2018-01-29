@@ -11,8 +11,10 @@
     </div>
     
     <div class="col-8 vertical-line">
-      <%= link_to 'Add Item' %>
-      <h2>Latest Items</h2>
+      <div class="btn-add-item">
+        <%= link_to 'Add Item', new_item_path, :class=>'btn-add-item'%>
+      </div>
+      <h2 class="title-based">Latest Items</h2>
       <% @items.each do |item| %>
         <%= link_to item.name, item_path(item)%> (<%= item.category.name %>)
         <br>
