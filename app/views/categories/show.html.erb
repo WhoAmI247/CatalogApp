@@ -10,7 +10,9 @@
     </div>
     
     <div class="col-8 vertical-line">
+      <% if logged_in? %>
       <%= link_to 'Add Item', new_item_path, :class=>'btn-add-item'%>
+      <% end %>
       <h2 class="title-based"><%= @category.name %> Items (<%= @items.length%> items)</h2>
       <% @items.each do |item| %>
         <%= link_to item.name, item_path(item)%> (<%= item.category.name %>)

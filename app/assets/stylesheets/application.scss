@@ -22,10 +22,11 @@
  
 .custom-link{
   text-decoration: none;
-  color: white;   
+  color: white !important;   
 }
 
 .custom-link:hover{
+  text-decoration: none;
   background-color: #021f40 !important;
 }
  
