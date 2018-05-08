@@ -20,6 +20,8 @@ gem 'autoprefixer-rails'
 gem 'font-awesome-rails'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+#Creating Scheduled Tasks With Whenever
+gem 'whenever', require: false
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes

@@ -3,4 +3,10 @@ class UserMailer < ApplicationMailer
   def registration_confirmation(user)
     mail(:to => user.email, :subject => "Registered")
   end
+  def digest_email_update()
+    @user = params[:user]
+    
+    mail(:to => user.email, :subject => "Items changed")
+  end
 end
+  
